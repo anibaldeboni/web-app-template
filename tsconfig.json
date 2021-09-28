@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "listFiles": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"target": "es6",
+		"module": "commonjs",
+		"lib": ["es6"],
+		"allowJs": true,
+		"checkJs": true,
+		"sourceMap": true,
+		"outDir": "dist",
+		"rootDir": "src",
+		"removeComments": true,
+		"strict": true,
+		"noImplicitAny": false,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"moduleResolution": "node",
+		"baseUrl": "src",
+    "paths": {
+      "@application/*": ["application/*"],
+      "@domain/*": ["domain/*"],
+      "@controllers/*": ["boundaries/controllers/*"],
+      "@infra/*": ["infra/*"],
+      "@commons/*": ["commons/*"],
+      "@logger": ["infra/logger/"],
+      "@config/*": ["config/*"]
+    },
+  },
+  "include": ["./src/**/*", "./src/**/*.json"],
+	"exclude": ["node_modules", "./src/public"]
+}
